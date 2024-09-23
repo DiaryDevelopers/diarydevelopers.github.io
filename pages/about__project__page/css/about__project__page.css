@@ -1,0 +1,120 @@
+.about__group {
+    width: 99%;
+    height: 30em;
+    background: transparent;
+    border-radius: 20px;
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.head__about {
+    width: 97%;
+    height: 60px;
+    background: transparent;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.head__about p {
+    margin-top: 25px;
+    margin-left: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+.icon__about {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: solid 2px var(--blue-main);
+    border-radius: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: var(--blue-main);
+}
+
+.main__about__block {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+.main__about {
+    width: 80%;
+    height: 70%;
+    background: transparent;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    padding: 30px;
+    line-height: 1.7;
+    background: #111111;
+    margin-top: 40px;
+}
+
+.main__about p {
+    font-family: 'Inter', sans-serif;
+    width: 35%;
+}
+
+.main__about p span {
+    font-family: 'Unbounded', sans-serif;
+    color: var(--blue-main);
+}
+
+.info1 {
+    margin-left: 3em;
+}
+
+@media screen and (max-width: 980px) {
+    .main__about {
+        display: block;
+    }
+    .main__about p {
+        width: 100%;
+    }
+    .info, .info1 {
+        margin-left: 2em;
+    }
+    .info1 {
+        margin-top: 2em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    info, .info1 {
+        margin-left: 1em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    info, .info1 {
+        margin-left: 0em;
+    }
+    .icon__about {
+        width: 45px;
+        height: 45px;
+        border-radius: 17px;
+    }
+    .head__about p {
+        font-size: 20px;
+    }
+    .info, .info1 {
+        margin-left: 0em;
+    }
+    .info1 {
+        margin-top: 0em;
+    }
+}

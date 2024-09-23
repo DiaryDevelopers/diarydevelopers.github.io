@@ -1,0 +1,48 @@
+main h1, main a {
+    color: white;
+    font-family: 'Unbounded', sans-serif;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+main a{
+    color: var(--blue-main);
+}
+
+main {
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    margin-top: 11em;
+}
+
+main h1, main a i {
+    font-size: 35px;
+    vertical-align: -6px;
+    transition: all .3s;
+}
+
+main h1 {
+    font-size: 220px;
+}
+
+main a:hover > i {
+    margin-right: 20px;
+}
+
+
+
+@media screen and (max-width: 620px) {
+    .text {
+        font-size: 120px;
+    }
+    main h1, main a i {
+        font-size: 25px;
+        vertical-align: -4px;
+    }
+    main a{
+        font-size: 20px;
+    }
+}

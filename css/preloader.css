@@ -1,0 +1,79 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    z-index: 1001;
+    transition: all .5s;
+    z-index: 50000001;
+}
+
+.preloader__loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 23%;
+}
+
+.loader {
+    width: 3em;
+    height: 3em;
+    background: #fff;
+    border-radius: 10px;
+    animation-name: load;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    padding: 2px;
+    display: flex;
+    align-items: self-end;
+}
+
+.hide_preloader {
+    opacity: 0;
+}
+
+.hide_loader {
+    display: none;
+}
+
+@keyframes load {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .preloader__loader {
+        margin-top: 34%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .preloader__loader {
+        margin-top: 43%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .preloader__loader {
+        margin-top: 65%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .preloader__loader {
+        margin-top: 92%;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .preloader__loader {
+        margin-top: 110%;
+    }
+}
