@@ -33,8 +33,8 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background: #00000019;
-    filter: blur(30px);
+    background: #00000080;
+    backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
     justify-content: center;
