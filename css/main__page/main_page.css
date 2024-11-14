@@ -169,13 +169,21 @@ main {
 }
 
 .tagline__main {
-    color: transparent;    
-	-webkit-background-clip: text;
-	background-clip: text;
-	background-image: linear-gradient(to right, rgb(52, 208, 219), rgb(47, 0, 255));
+    background: linear-gradient(to right, rgb(47, 0, 255), rgb(52, 208, 219), rgb(47, 0, 255));
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textflow 5s linear infinite;
     font-size: 140px;
     margin: 0;
+    
 }
+
+@keyframes textflow {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+  }
 
 
 
