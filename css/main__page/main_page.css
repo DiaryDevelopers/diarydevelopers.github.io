@@ -33,14 +33,14 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background: #00000080;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Inter', sans-serif;
     border-bottom: solid #2c2c2c 0.5px;
-    z-index: 20;
+    z-index: 20000000;
 }
 
 .nav__menu {
@@ -389,6 +389,25 @@ footer {
     display: block;
     opacity: 1;
     transition: all .3s;
+}
+
+
+@keyframes linearGradient {
+    from {
+        -webkit-background-clip: text;
+        background-clip: text;
+	    background-image: linear-gradient(to right, rgb(219, 52, 52), rgb(47, 0, 255));
+    }
+    50% {
+        -webkit-background-clip: text;
+        background-clip: text;
+	    background-image: linear-gradient(to right, rgb(47, 0, 255), rgb(52, 208, 219));
+    }
+    to {
+        -webkit-background-clip: text;
+        background-clip: text;
+	    background-image: linear-gradient(to right, rgb(52, 208, 219), rgb(47, 0, 255));
+    }
 }
 
 
