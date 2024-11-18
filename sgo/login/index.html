@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta keywords="">
+    <title>Электронный дневник by DiaryDevs</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="media">
+    <div class="media__block">
+        <div class="id">
+            <h1><span>104</span> ID</h1>
+        </div>
+        <h1>К сожалению, <span>мобильная версия</span> ещё не доступна</h1>
+        <a href="../../index.html">
+            <button class="return">Вернуться<i class='bx bxs-right-arrow-circle'></i></button>
+        </a>
+    </div>
+</div>
+
+    <div class="back">
+        <a href="../../index.html"><i class='bx bxs-right-arrow-circle bx-rotate-180' ></i></a>
+    </div>
+
+    <div class="auth">
+        <div class="auth__form">
+            <h1>104 <span>ID</span></h1>
+            <form action="" method="get">
+                <div class="getTypeOfUser">
+                    <button class="active student__type" id="studentType" type="button">Ученик</button>
+                    <button class="teacher__type" id="teacherType" type="button">Учитель</button>
+                </div>
+        
+                <div class="input__information">
+                    <div class="login">
+                    <i class='bx bxs-user'></i>
+                    <input type="text" class="" placeholder="">
+                    </div>
+                    <div class="password">
+                        <i class='bx bxs-key' ></i>
+                        <input type="password" class="" placeholder="">
+                    </div>
+                </div>
+                <button type="submit" class="auth__user" id="authUser" type="submit">Авторизация</button>
+    
+                <div class="bottom__auth">
+                    <div class="remember-me">
+                        <input type="checkbox" class="rememberBox" id="rememberUser" value="yes" name="rememberUser">
+                        <label for="rememberUser"></label>
+                        <p class="remember__text">Запомнить меня</p>
+                    </div>
+                    <a href="" class="repass">Забыли пароль?</a>
+                </div>
+            </form>
+    
+        </div>
+        </div>
+
+        <script src="./js/getUserType.js"></script>
+
+</body>
+</html>

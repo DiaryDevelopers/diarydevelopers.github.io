@@ -142,7 +142,7 @@ main {
     height: 55em;
     margin-top: 8em;
     background: #000000;
-    display: flexbox;
+    display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -180,6 +180,32 @@ main {
     
 }
 
+.beta__test {
+    border: 1px solid var(--smoke);
+    background: rgba(255, 255, 255, 0.4);
+    padding: 15px;
+    color: var(--white--main);
+    border-radius: 15px;
+    font-family: 'Inter', sans-serif;
+    width: 15em;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 10px;
+    transition: all .3s;
+    z-index: 3000000000;
+}
+
+.beta__test:hover {
+    background: var(--smoke);
+    color: var(--main-color);
+}
+
+.beta__test i{
+    font-size: 25px;
+    vertical-align: -5px;
+    margin-left: 10px;
+}
+
 @keyframes textflow {
     from {background-position: 0% center}         
     to {background-position: 200% center}
@@ -210,7 +236,7 @@ main {
     padding: 30px;
     background: #0f0f0f;
     border-radius: 20px;
-    display: flexbox;
+    display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -391,6 +417,14 @@ footer {
     transition: all .3s;
 }
 
+.deactivate {
+    display: none;
+}
+
+.activate {
+    display: block;
+}
+
 
 @keyframes linearGradient {
     from {
@@ -416,6 +450,9 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 300px);
         height: 60em;
+    }
+    .beta {
+        width: 30%;
     }
 }
 
@@ -450,6 +487,15 @@ footer {
     }
 }
 
+@media screen and (min-width: 780px) {
+    .list {
+        display: flex;
+    }
+    .nav__menu {
+        display: flex;
+    }
+}
+
 @media screen and (max-width: 780px) {
     .block__about {
         width: 20em;
@@ -458,7 +504,7 @@ footer {
         display: flex;
     }
     .list {
-        display: block;
+        /*display: block;*/
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -480,7 +526,7 @@ footer {
         width: 100%;
         height: 53.3em;
         margin-top: 57em;
-        display: block;
+        /*display: block;*/
         justify-content: center;
         align-items: center;
     }

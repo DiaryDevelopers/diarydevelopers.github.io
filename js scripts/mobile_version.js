@@ -4,27 +4,25 @@ let ModalNav = document.querySelector(".nav__menu");
 let ModalIs = false;
 let head = document.querySelector('header');
 
-function Open() {
-    Modal.style.display = "block";
-    Modal.style.opacity = 1;
-}
-
-function Close() {
-    Modal.style.display = "none";
-    Modal.style.opacity = 0;
-}
-
 function ModalWindow() {
     if (ModalIs == true) {
         Modal.style.opacity = 0;
         setTimeout(function() { 
-            Modal.style.display = "none";
+            Modal.classList.toggle('deactivate');
+            ModalNav.classList.toggle('deactivate');
+
+            Modal.classList.toggle('activate');
+            ModalNav.classList.toggle('activate');
     }, 200);
         ModalIs = false;
         btnOpenModal.classList.remove('open');
         head.style.zIndex = 0;
     } 
     else if (ModalIs == false) {
+        Modal.classList.toggle('deactivate');
+        ModalNav.classList.toggle('deactivate');
+        Modal.classList.toggle('activate');
+        ModalNav.classList.toggle('activate');
         Modal.style.transition = '.3s';
         Modal.style.opacity = 1;
         Modal.style.display = "block";
