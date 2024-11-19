@@ -20,6 +20,7 @@ body {
 
 .media__block {
     position: absolute;
+    top: 0;
     display: none;
     justify-content: center;
     flex-direction: column;
