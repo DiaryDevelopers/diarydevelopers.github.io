@@ -14,7 +14,7 @@ const apiUrl = 'http://localhost:3000'
 // }
 
 function saveToken(token) {
-    document.cookie = `token=${token}; expires=${new Date(Date.now() + 2 * 60 * 60 * 1000).toUTCString()}; secure;`;
+    document.cookie = `token=${token}; expires=${new Date(Date.now() + 2 * 60 * 60 * 1000).toUTCString()}; path=/; secure`;
 }
 
 teacher.onclick = () => {
