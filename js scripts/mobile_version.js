@@ -7,6 +7,7 @@ let head = document.querySelector('header');
 function ModalWindow() {
     if (ModalIs == true) {
         Modal.style.opacity = 0;
+        window.navigator.vibrate(50);
         setTimeout(function() { 
             Modal.classList.toggle('deactivate');
             ModalNav.classList.toggle('deactivate');
