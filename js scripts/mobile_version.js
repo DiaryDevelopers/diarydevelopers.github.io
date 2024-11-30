@@ -7,7 +7,6 @@ let head = document.querySelector('header');
 function ModalWindow() {
     if (ModalIs == true) {
         Modal.style.opacity = 0;
-        navigator.vibrate(50);
         setTimeout(function() { 
             Modal.classList.toggle('deactivate');
             ModalNav.classList.toggle('deactivate');
@@ -20,7 +19,6 @@ function ModalWindow() {
         head.style.zIndex = 0;
     } 
     else if (ModalIs == false) {
-        navigator.vibrate(50);
         Modal.classList.toggle('deactivate');
         ModalNav.classList.toggle('deactivate');
         Modal.classList.toggle('activate');
