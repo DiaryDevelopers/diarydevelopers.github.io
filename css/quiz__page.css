@@ -13,3 +13,7 @@
 .main__page h1 {
     color: var(--white--main);
 }
+
+.main__page i h1 a {
+    color: var(--blue-main);
+}
