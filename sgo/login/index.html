@@ -2,61 +2,97 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <meta keywords="">
-    <title>Электронный дневник by DiaryDevs</title>
-
     <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv = "content-security-policy">
+    <META NAME="description" CONTENT="Электронный дневник от DiaryDevelopers. От учеников - для учеников">
+    <META NAME="keywords" CONTENT="сго, эл жрунал, журнал, дневник, сгорсо, рсо23, сго23, сгорсо23, эл дневник, электронный дневник, школьный дневник, школьный журнал">
+    <META NAME="AUTHOR" CONTENT="MixFixLixx">
+    <meta name="theme-color" content="#4285f4" />
+    <meta name="copyright" content="Copyright DiaryDevelopers 2024 - 2025">
+    <title>Электронный Дневник | ReDiary</title>
+    <script src="./scipts/cookie.js"></script>
+    <script src="./scipts/consoleWarnings.js"></script>
 </head>
-<body>
+<body class="dark">
 
-<div class="media">
-    <div class="media__block">
-        <div class="id">
-            <h1><span>104</span> ID</h1>
-        </div>
-        <h1>К сожалению, <span>мобильная версия</span> ещё не доступна</h1>
-        <a href="../../index.html">
-            <button class="return">Вернуться<i class='bx bxs-right-arrow-circle'></i></button>
-        </a>
-    </div>
-</div>
+    <noscript>JavaScript disabled. Please enable JavaScript in settings!</noscript>
 
-    <div class="back">
-        <a href="../../index.html"><i class='bx bxs-right-arrow-circle bx-rotate-180' ></i></a>
+    <div class="redirect">
+        <div class="line"></div>
+        <div class="page"></div>
     </div>
 
-    <div class="auth">
-        <div class="auth__form">
-            <h1>104 <span>ID</span></h1>
-            <form action="" method="get" class="form">
-                <div class="getTypeOfUser">
-                    <button class="active student__type" id="studentType" type="button">Ученик</button>
-                    <button class="teacher__type" id="teacherType" type="button">Учитель</button>
-                </div>
-        
-                <div class="input__information">
-                    <div class="login">
-                    <i class='bx bxs-user'></i>
-                    <input type="text" class="" placeholder="">
-                    </div>
-                    <div class="password">
-                        <i class='bx bxs-key' ></i>
-                        <input type="password" class="" placeholder="">
-                    </div>
-                </div>
-                <button type="submit" class="auth__user" id="authUser" type="submit">Авторизация</button>
-    
-                <div class="bottom__auth">
-                    <a href="" class="repass">Забыли пароль?</a>
-                </div>
-            </form>
-    
-        </div>
+    <a href="" class="back">
+        <i class='bx bxs-chevron-left'></i>
+        Вернуться
+    </a>
+
+
+    <div class="login">
+        <div class="icon">
+            <img src="images/logo.png" alt="">
         </div>
 
-        <script src="./js/getUserType.js"></script>
+        <div class="login__label">
+            <p class="welcome">
+                Временной контитуум не обнаружен
+            </p>
+        </div>
+
+        <div class="login__input">
+            <input type="text" placeholder="Ваш логин" id="loginField">
+            <input type="password" placeholder="••••••••" id="passswordField">
+            <p class="undefined">Неверный логин или пароль</p>
+            <button class="authButton">Авторизоваться</button>
+            <a href="#">использовать ключ доступа</a>
+
+            <p class="line-with-text"><span>или</span></p>
+
+            <div class="faceid__login">
+                <button>
+                    Авторизоваться через FaceID
+                </button>
+
+                <button class="toggleThemeBtn">
+                    <i class='bx bxs-adjust' ></i>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="info">
+            <p class="info">Вводя свои данные, вы соглашаетесь с
+                <a href="">использованием файлов cookie, </a></p>
+            <p>а также с <a href="">политикой конфиденциальности</a></p>
+        </div>
+
+    </div>
+
+    <div class="circle">
+        <div class="circle1 circle"></div>
+        <div class="circle2 circle"></div>
+    </div>
+
+    <div class="cookie--notification">
+        <div class="cookie">
+            <i class='bx bxs-cookie'></i>
+            <h1>Cookie-Файлы</h1>
+        </div>
+        <div class="cookie--text">
+            Мы используем файлы Cookie для улучшения стабильности и работы сайта.
+        </div>
+        <div class="cookie--buttons">
+            <button onclick="toogleCookie()">Хорошо</button>
+        </div>
+    </div>
+
+    <script src="./scipts/toggleTheme.js"></script>
+    <script src="scipts/load.js"></script>
+    <script src="./scipts/auth.js"></script>
 
 </body>
 </html>

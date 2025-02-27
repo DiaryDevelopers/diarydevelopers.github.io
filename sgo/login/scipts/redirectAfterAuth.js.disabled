@@ -1,0 +1,64 @@
+// FIXME please ignore this file
+
+const accounts = {
+    mark: {
+        login: "маркВ1",
+        password: "123123"
+    },
+    katya: {
+        login: "катяС1",
+        password: "123123"
+    },
+    school: {
+        login: "admin",
+        password: "admin123",
+    }
+}
+
+document.querySelector(".authButton").addEventListener("click", (e) => {
+    const login = document.getElementById("loginField").value;
+    const password = document.getElementById("passswordField").value;
+
+    let mainPageDiary = '../main/index.html';
+    const redirect = () => window.location.href=mainPageDiary;
+
+    const toMainPage = () => {
+        const line = document.querySelector(".line");
+
+        for (let i = 0; i <= 100; i += 20) {
+            setTimeout(() => {
+                line.style.width = `${i}%`;
+            }, i * 2);
+        }
+    }
+
+
+    if (login === accounts.mark.login && password === accounts.mark.password) {
+        const line = document.querySelector(".line")
+        toMainPage()
+        setTimeout(() => {
+            redirect()
+        }, 1200)
+    }
+    if (login === accounts.katya.login && password === accounts.katya.password) {
+        const line = document.querySelector(".line")
+        toMainPage()
+        setTimeout(() => {
+            redirect()
+        }, 1200)
+    }
+    if (login === accounts.school.login && password === accounts.school.password) {
+        const line = document.querySelector(".line")
+        toMainPage()
+        setTimeout(() => {
+            redirect()
+        }, 1200)
+    }
+     else {
+        setTimeout(() => {
+            document.querySelector(".undefined").style.opacity = "1";
+        }, 200)
+    }
+})
+
+
