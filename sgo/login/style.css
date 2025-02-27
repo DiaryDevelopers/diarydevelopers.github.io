@@ -71,7 +71,6 @@ body {
     flex-direction: column;
     overflow: hidden;
     transition: .7s;
-    overflow-x: hidden;
 }
 
 a {
