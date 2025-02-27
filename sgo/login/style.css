@@ -376,7 +376,6 @@ a {
 @media screen and (width <= 1250px) {
     body {
         overflow-y: scroll;
-        overflow-x: hidden;
     }
 }
 
