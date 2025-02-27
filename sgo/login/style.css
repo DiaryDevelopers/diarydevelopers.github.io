@@ -35,6 +35,10 @@
     color: var(--selection--color);
 }
 
+html {
+    background: --main--background: #1e1e20;
+}
+
 
 /*   Общие стили   */
 
@@ -67,6 +71,7 @@ body {
     flex-direction: column;
     overflow: hidden;
     transition: .7s;
+    overflow-x: hidden;
 }
 
 a {
