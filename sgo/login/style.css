@@ -69,7 +69,8 @@ body {
     font-family: var(--main--font);
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
     transition: .7s;
 }
 
