@@ -17,7 +17,9 @@ authButton.onclick = async () => {
         headers: {
             "Content-Type": "application/json"
         }
-    }).catch(() => {})
+    }).catch((error) => {
+        console.error(error)
+    })
 
     if (!response.ok) {
         document.querySelector(".undefined").style.opacity = '1'
