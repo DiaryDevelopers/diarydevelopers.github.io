@@ -35,10 +35,6 @@
     color: var(--selection--color);
 }
 
-html {
-    background: var(--main--background);
-}
-
 
 /*   Общие стили   */
 
