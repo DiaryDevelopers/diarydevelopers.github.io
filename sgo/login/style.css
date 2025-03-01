@@ -247,7 +247,7 @@ a {
     filter: blur(70px);
     transition: .10s;
     animation: circle 5s infinite ease;
-    z-index: -1;
+    z-index: 1;
 }
 .circle1 {
     bottom: -11em;
