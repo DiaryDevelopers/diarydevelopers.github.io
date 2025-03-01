@@ -239,7 +239,7 @@ a {
 
 .circle1,
 .circle2 {
-    background: var(--circle-color);
+    background: rgb(32 135 175 / 72%);
     width: 30em;
     height: 30em;
     border-radius: 50%;
