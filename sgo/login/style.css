@@ -340,14 +340,20 @@ a {
 @media screen and (width <= 1500px) {
     .login__input {
         width: 30%;
-        padding: 15px;
+    }
+    .loginField,
+    .passwordField{
+         padding: 15px;
     }
 }
 
 @media screen and (width <= 1250px) {
     .login__input {
         width: 35%;
-        padding: 15px;
+    }
+    .loginField,
+    .passwordField{
+         padding: 15px;
     }
     body {
         overflow-y: scroll;
@@ -377,13 +383,22 @@ a {
 @media screen and (width <= 700px) {
     .login__input {
         width: 65%;
+        margin-top: 0;
     }
+    .welcome {
+        font-size: 3vh;
+        margin-top: 0.5em;
+    }
+    
 }
 
 @media screen and (width <= 500px) {
     .login__input {
         width: 90%;
-        padding: 15px;
+    }
+    .loginField,
+    .passwordField{
+         padding: 15px;
     }
     .cookie--notification {
         width: 83%;
